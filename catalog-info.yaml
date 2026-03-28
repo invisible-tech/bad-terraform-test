@@ -16,5 +16,5 @@ metadata:
 spec:
   type: internal tool
   lifecycle: experimental
-  owner: infra-paved-path
+  owner: group:default/pavedpath
   domain: core-tech
