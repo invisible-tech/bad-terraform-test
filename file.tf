@@ -56,6 +56,11 @@ resource "aws_instance" "instance" {
     tags = {
       name = "Name"
     }
+    metadata_options {
+        http_endpoint = "enabled"
+        http_tokens = "required"
+        http_put_response_hop_limit = 1
+    }
 }
   
 resource "aws_s3_bucket" "bucket" {
